@@ -1,0 +1,103 @@
+.home {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	max-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+
+	.hero_section {
+		margin-top: 80px;
+		position: relative;
+		padding: 0 30px;
+		width: 100%;
+
+		.img_container {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+
+			img {
+				width: 600px;
+				max-width: 100%;
+				// object-fit: contain;
+				height: 600px;
+				max-height: 100%;
+			}
+		}
+
+		.text_box {
+			position: absolute;
+			width: calc(100% - 60px);
+			height: 170px;
+			bottom: 50px;
+			background: #d2d2d2;
+			display: flex;
+			gap: 20px;
+			align-items: center;
+			justify-content: space-between;
+			color: #000000;
+			padding: 20px;
+
+			.left {
+				width: 80%;
+				height: 100%;
+
+				.text_container {
+					width: 100%;
+					height: 100%;
+					overflow-y: scroll;
+
+					font-size: 20px;
+				}
+			}
+
+			.right {
+				width: 20%;
+				height: 100%;
+
+				button {
+					border: 5px solid #000;
+					width: 100%;
+					height: 100%;
+					font-size: 20px;
+					cursor: pointer;
+
+					span {
+						display: block;
+						margin-top: 5px;
+						font-size: 35px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include tablet-screen {
+	.home {
+		.hero_section {
+			padding: 0px;
+
+			.img_container {
+				align-items: flex-end;
+				width: 100%;
+				height: 100%;
+				overflow-x: hidden;
+				position: relative;
+
+				img {
+					position: absolute;
+					right: -100px;
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.text_box {
+				margin-left: 30px;
+			}
+		}
+	}
+}
