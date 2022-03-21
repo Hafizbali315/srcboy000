@@ -58,6 +58,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<p className="copyright">Copyright © 2022 Zodiacal All rights reserved</p>
 		</div>
 	)
 }

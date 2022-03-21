@@ -73,6 +73,15 @@
 			}
 		}
 	}
+
+	.copyright {
+		position: fixed;
+		width: 100%;
+		text-align: center;
+		bottom: 14px;
+		font-size: 14px;
+		font-family: sans-serif;
+	}
 }
 
 @include tablet-screen {
