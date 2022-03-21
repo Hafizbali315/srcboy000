@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import HomeLgImg from '../assets/HomeLgImg.png'
+import { Scrollbars } from 'react-custom-scrollbars'
 
 const Home = () => {
 	return (
@@ -13,7 +14,10 @@ const Home = () => {
 
 				<div className="text_box">
 					<div className="left">
-						<div className="text_container">
+						<Scrollbars
+							renderThumbVertical={({ style, ...props }) => <div {...props} style={{ ...style, backgroundColor: '#000' }} />}
+							className="text_container"
+						>
 							A limited NFT collection where the token itself doubles as your membership to the zodiacal ! Play with us. <br />
 							<br />
 							In our metaverse, there are 8 highly civilized constellation families:
@@ -44,7 +48,7 @@ const Home = () => {
 							<br />
 							<br />
 							The Zodiacial Familiy could not stand their cruelty and decided to put an end to it!
-						</div>
+						</Scrollbars>
 					</div>
 					<div className="right">
 						<button>
