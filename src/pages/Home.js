@@ -52,8 +52,7 @@ const Home = () => {
 					</div>
 					<div className="right">
 						<button>
-							each 0.08 ETH + GAS
-							<span>mint</span>
+							<span>rarity </span>
 						</button>
 					</div>
 				</div>

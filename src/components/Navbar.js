@@ -12,6 +12,8 @@ import TwitterIconSm from '../assets/TwitterIconSm.png'
 import OpenseaIconSm from '../assets/OpenseaIconSm.png'
 import WorldIconSm from '../assets/WorldIconSm.png'
 
+import HomeLogoLg from '../assets/HomeLogoLg.png'
+
 import PersonSmOverlayIcon from '../assets/PersonSmOverlayIcon.png'
 
 const Navbar = () => {
@@ -26,7 +28,9 @@ const Navbar = () => {
 
 	return (
 		<div className="navbar">
-			<div className="logo">zodiacal</div>
+			<div className="logo">
+				<img src={HomeLogoLg} alt="" />
+			</div>
 
 			<div className="links">
 				<ul className="page_links">
