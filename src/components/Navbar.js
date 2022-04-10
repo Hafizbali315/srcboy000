@@ -14,7 +14,7 @@ import WorldIconSm from '../assets/WorldIconSm.png'
 
 import HomeLogoLg from '../assets/HomeLogoLg.png'
 
-import PersonSmOverlayIcon from '../assets/PersonSmOverlayIcon.png'
+// import PersonSmOverlayIcon from '../assets/PersonSmOverlayIcon.png'
 
 const Navbar = () => {
 	const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -47,16 +47,8 @@ const Navbar = () => {
 					</li>
 
 					<li>
-						<Link className={`link ${isActive('/gallery')}`} to="/gallery">
-							gallery
-							<span>soon</span>
-						</Link>
-					</li>
-
-					<li>
-						<Link className={`link ${isActive('/game')}`} to="/game">
-							game
-							<span>soon</span>
+						<Link className={`link ${isActive('/roadmap')}`} to="/roadmap">
+							roadmap
 						</Link>
 					</li>
 				</ul>
@@ -116,17 +108,11 @@ const Navbar = () => {
 										mint
 									</Link>
 								</li>
+
 								<li>
-									<Link className="link" to="/gallery" onClick={() => setShowMobileMenu(false)}>
-										galley
+									<Link className="link" to="/roadmap" onClick={() => setShowMobileMenu(false)}>
+										roadmap
 									</Link>
-									<span>soon</span>
-								</li>
-								<li>
-									<Link className="link" to="/game" onClick={() => setShowMobileMenu(false)}>
-										game
-									</Link>
-									<span>04-2022</span>
 								</li>
 
 								<li>
@@ -159,10 +145,6 @@ const Navbar = () => {
 							</ul>
 
 							<button>connect wallet</button>
-						</div>
-
-						<div className="man_img">
-							<img src={PersonSmOverlayIcon} alt="PersonSmOverlayIcon" />
 						</div>
 
 						<span className="cancel" onClick={() => setShowMobileMenu(false)}>

@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import { Scrollbars } from 'react-custom-scrollbars'
 
 import Navbar from './../components/Navbar'
@@ -10,9 +12,22 @@ import MintImg4 from '../assets/MintImg4.png'
 import MintImg5 from '../assets/MintImg5.png'
 import MintImg6 from '../assets/MintImg6.png'
 
-import PersonSmOverlayIcon from '../assets/PersonSmOverlayIcon.png'
+// import PersonSmOverlayIcon from '../assets/PersonSmOverlayIcon.png'
 
 const Mint = () => {
+	const [count, setCount] = useState(0)
+
+	const increase = () => {
+		if (count < 20) {
+			setCount((prev) => prev + 1)
+		}
+	}
+	const decrease = () => {
+		if (count > 0) {
+			setCount((prev) => prev - 1)
+		}
+	}
+
 	return (
 		<div className="mint">
 			<Navbar />
@@ -59,18 +74,26 @@ const Mint = () => {
 							6 traits = 0.6%=60/10000pcs
 							<br />
 							<br />
-							<div className="man_img">
-								<img src={PersonSmOverlayIcon} alt="PersonSmOverlayIcon" />
-							</div>
 							-----------------------------------------------------------------------------------------
 						</Scrollbars>
 					</div>
+
 					<div className="right">
-						<h2>price</h2>
-						<button>
-							each 0.08 ETH + GAS
-							<span>mint</span>
-						</button>
+						<h3>each 0.08 ETH + GAS</h3>
+
+						<div className="counter">
+							<div className="minus" onClick={decrease}>
+								{' '}
+								-{' '}
+							</div>
+							<div className="input">{count}</div>
+							<div className="minus" onClick={increase}>
+								{' '}
+								+{' '}
+							</div>
+						</div>
+
+						<button>mint</button>
 					</div>
 				</div>
 			</div>

@@ -52,7 +52,10 @@ const Home = () => {
 					</div>
 					<div className="right">
 						<button>
-							<span>rarity </span>
+							<span>
+								Public Sale <br /> May 1, 2022
+							</span>
+							each 0.08 ETH + GAS
 						</button>
 					</div>
 				</div>
