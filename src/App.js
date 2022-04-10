@@ -9,11 +9,12 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="" element={<Home />}>
-						<Route path="/home" element={<Home />} />
+						<Route path="home" element={<Home />} />
 					</Route>
 
-					<Route path="/mint" element={<Mint />} />
-					<Route path="/roadmap" element={<Roadmap />} />
+					<Route path="mint" element={<Mint />} />
+
+					<Route path="roadmap" element={<Roadmap />} />
 				</Routes>
 			</Router>
 		</div>
