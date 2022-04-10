@@ -93,6 +93,7 @@ const Mint = () => {
 							</div>
 						</div>
 
+						<span>*mint up to 10 NFTs per wallet</span>
 						<button>mint</button>
 					</div>
 				</div>
