@@ -33,7 +33,7 @@ const Mint = () => {
 			<Navbar />
 
 			<div className="content_section">
-				<h2>mint - rarity </h2>
+				<h2>mint</h2>
 
 				<div className="cards_row">
 					<MintCard img={MintImg1} traits="6 traits" pcs="60pcs" />
@@ -44,7 +44,7 @@ const Mint = () => {
 					<MintCard img={MintImg6} traits="1 traits" pcs="3500pcs" />
 				</div>
 
-				<h2>specs</h2>
+				<h2>specification</h2>
 
 				<div className="specs_content">
 					<div className="left">
@@ -60,7 +60,7 @@ const Mint = () => {
 							To access members-only areas such as game, gallery will need to be signed into their Metamask Wallet.
 							<br />
 							<br />
-							rarity
+							<h2 style={{ textAlign: 'left' }}>rarity</h2>
 							<br />
 							1 traits = 35% =3500/10000pcs
 							<br />
@@ -73,8 +73,6 @@ const Mint = () => {
 							5 traits = 4.4%=440/10000pcs <br />
 							6 traits = 0.6%=60/10000pcs
 							<br />
-							<br />
-							-----------------------------------------------------------------------------------------
 						</Scrollbars>
 					</div>
 

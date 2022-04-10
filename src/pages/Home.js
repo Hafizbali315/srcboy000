@@ -15,12 +15,16 @@ const Home = () => {
 				<div className="text_box">
 					<div className="left">
 						<Scrollbars
-							renderThumbVertical={({ style, ...props }) => <div {...props} style={{ ...style, backgroundColor: '#000' }} />}
+							renderThumbVertical={({ style, ...props }) => <div {...props} style={{ ...style, backgroundColor: '#000', width: '7px' }} />}
 							className="text_container"
 						>
-							A limited NFT collection where the token itself doubles as your membership to the zodiacal ! Play with us. <br />
+							A limited NFT collection. The token itself is also your zodiacal membership! The zodiacal warriors are kind and lovely. With
+							the zodiac elements as the background,this project is our team’s first step into the Metaverse. We focus on quality in
+							preparation for building our vast and interesting Metaverse in our hearts. <br />
 							<br />
-							In our metaverse, there are 8 highly civilized constellation families:
+							In our metaverse,
+							<br />
+							there are 8 highly civilized constellation families:
 							<br />
 							The Ursa Major Family,
 							<br />
@@ -37,17 +41,25 @@ const Home = () => {
 							and the last but the most paramount,
 							<br />
 							<br />
-							The Zodiacal Family
+							<br />
+							&#123;The Zodiacal Family&#125;
 							<br />
 							<br />
-							elementA, a substance that allows armor to evolve. Extremely rare.
+							elementA, a substance that allows armor to evolve.
 							<br />
-							To find elementA, some families sent their warriors to collect elementA in the metaverse,
+							Extremely rare.
+							<br />
+							<br />
+							To find elementA, some families sent their warriors
+							<br />
+							to collect elementA in the metaverse,
 							<br />
 							which led to the extinction of many civilizations.
 							<br />
 							<br />
-							The Zodiacial Familiy could not stand their cruelty and decided to put an end to it!
+							The Zodiacial Familiy could not stand their cruelty and decided to put <br />
+							an end to it!
+							<br />
 						</Scrollbars>
 					</div>
 					<div className="right">
