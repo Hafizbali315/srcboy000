@@ -52,12 +52,12 @@ const Mint = () => {
 							className="text"
 							renderThumbVertical={({ style, ...props }) => <div {...props} style={{ ...style, backgroundColor: '#000' }} />}
 						>
-							The zodiacal family are stored as ERC-721 tokens on the Ethereum blockchain and hosted on IPFS.
+							zodiacal living on the Ethereum blockchain in the form of ERC-721 tokens and hosted on IPFS,
 							<br />
-							Purchasing the zodiacal costs 0.08 ETH.
+							each zodiacal is priced at 0.08 ETH + GAS.
 							<br />
 							<br />
-							To access members-only areas such as game, gallery will need to be signed into their Metamask Wallet.
+							A total of 10,000 warriors will be sold to the public in a mystery box format.
 							<br />
 							<br />
 							<h2 style={{ textAlign: 'left' }}>rarity</h2>
